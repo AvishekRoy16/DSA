@@ -1,0 +1,45 @@
+Step 1: Go to github and create a new repository.
+
+Step 2: In your local machine find the directory you want to upload and in the terminal cd into it and type 
+	# git init
+
+Step 3: To add all the files we write the code
+	# git add .
+	
+Step 4: To check weather all the files are in staging area 
+	# git status
+	
+Step 5: Then we need to commit these file using:
+	# git commit -m "<Whatever the meaagge is no need of <> it is just to show>"
+	
+Step 6: Copy the url from the github page HTTPS/SSH:
+	# git remote add origin <The link goes here>
+
+Step 7: git push -u origin master
+
+#if you were using HTTPS then credentials are asked or else for SSH no credentials willl be asked and the repository will be updated.
+
+If unable to understand watch this: https://www.youtube.com/watch?v=wrb7Gge9yoE
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+PUSHING AND PULLING OF CODE:
+To make changes in a git repository on the cloud it first has to replicated in the local machine
+
+PULL:
+to get the repository in the local machine we first make a folder in the local machine which is a git repositoy by:
+	# git init (in the folder ni terminal using the <cd> command)
+
+Now that our local machine has a git repository we have to pull the contets from the cloud using
+	# git pull <HTTPS/HSS link>
+
+------------------------------------------------------------------
+PUSH:	
+Now that we have the repository in the cloud in our local machine we can make changes to it or add files and folder to it.
+After making changes we have to upload it back to the cloud to to that there are steps that we need to follow.
+	# git add .
+	# git commit -m "<A suitable message of what has been done in the commit>"
+	# git remote add origin <HTTPS/HSS link>
+	# git push -u origin master
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------
